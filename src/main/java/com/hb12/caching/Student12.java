@@ -4,10 +4,17 @@ import org.hibernate.annotations.Cache;
 import javax.persistence.*;
 
 /*
+Hibernate caching nedir?
+
+Bir veritabanı sorgusu sonucunu önbelleğe alarak, gelecekteki benzer
+sorguların cevabını hızlandıran bir mekanizmadır.
+
 1)	First Level Cache --->
 			* defaultta açık geliyor , kapatma durumu yok
 			* Aynı session içinde kayıt alır
 			* session kapanınca içindejkiler silinir
+			* hibernate seviyesinde yapilir
+			* hibernate  session nesnesi uzerinden yapilir
 
 2) Second Level Cache --->
 			* Defaultta kapalıdır
